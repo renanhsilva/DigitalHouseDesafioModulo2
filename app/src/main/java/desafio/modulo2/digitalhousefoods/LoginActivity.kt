@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         findViewById<Button>(R.id.btnLogin).setOnClickListener(openActivity(HomeActivity::class.java))
-        findViewById<Button>(R.id.btnRegister).setOnClickListener(openActivity(HomeActivity::class.java))
+        findViewById<Button>(R.id.btnRegister).setOnClickListener(openActivity(RegisterActivity::class.java))
     }
 
     fun openActivity(activity: Class<out Activity>): View.OnClickListener? {
