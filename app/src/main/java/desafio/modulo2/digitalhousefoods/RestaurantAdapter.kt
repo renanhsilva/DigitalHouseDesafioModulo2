@@ -40,7 +40,7 @@ class RestaurantAdapter(private val listRestaurants: List<Restaurants>) : Recycl
         }
 
         override fun onClick(v: View?) {
-            if (adapterPosition != RecyclerView.NO_POSITION) == listener.onClickRestaurant(adapterPosition)
+
         }
     }
 }

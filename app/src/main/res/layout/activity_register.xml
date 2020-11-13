@@ -7,6 +7,12 @@
     tools:context=".RegisterActivity"
     android:orientation="vertical">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:title="Register"
+        app:titleTextColor="@color/white" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -52,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="30dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
