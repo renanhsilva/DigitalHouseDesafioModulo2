@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".recycler_restaurant_cards"
     app:cardCornerRadius="40dp"
     android:layout_margin="10dp">
 
@@ -44,7 +43,7 @@
                 android:text="Edereco"/>
 
             <TextView
-                android:id="@+id/txt_horario_funcionamento"
+                android:id="@+id/txt_horario_fechamento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Horário"/>

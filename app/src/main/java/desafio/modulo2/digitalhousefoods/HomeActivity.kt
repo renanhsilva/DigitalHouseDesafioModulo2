@@ -4,20 +4,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.digitalhousefoods.domain.RestaurantAdapter
+import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.fragment_restaurant.*
 
 
 class HomeActivity : AppCompatActivity() {
-
-    companion object {
-        lateinit var fm : FragmentManager
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
-        fm = supportFragmentManager
-        fm.beginTransaction().add(R.id.fragmentContainerHome, RestaurantFragment(), null).addToBackStack(null).commit()
-
+        recycler_home.adapter = RestaurantAdapter(listaRestaurants())
+        recycler_home.layoutManager = LinearLayoutManager(this)
     }
 }
