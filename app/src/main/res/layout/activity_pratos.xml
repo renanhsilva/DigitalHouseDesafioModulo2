@@ -9,20 +9,23 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="fitXY"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:src="@drawable/image4"/>
 
     <TextView
-        android:id="@+id/txt_nome_prato_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="#8492A6"
+        android:textSize="16sp"
         android:text="Nome Prato"/>
 
     <TextView
-        android:id="@+id/txt_prato_descricao_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="#8492A6"
+        android:textSize="16sp"
         android:text="Lorem Ipsum"/>
 
 </LinearLayout>

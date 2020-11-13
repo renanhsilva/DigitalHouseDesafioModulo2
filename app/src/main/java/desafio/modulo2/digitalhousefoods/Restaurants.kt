@@ -22,25 +22,25 @@ fun listaRestaurants(): MutableList<Restaurants> = mutableListOf(
     restaurants {
         nomeRestaurant="Tony Romas's"
         endereco="Av. Lavandisca, 717 - Indianópolis, SP"
-        horaFechamento="22:00"
+        horaFechamento="Fecha às 22:00"
         bannerRestaurant= R.drawable.image1
     },
     restaurants {
         nomeRestaurant="Aoyama - Moema"
-        endereco="Av. Lavandisca, 717 - Indianópolis, SP"
-        horaFechamento="22:00"
+        endereco="Alameda dos Arapanés, 532 - Moema"
+        horaFechamento="Fecha às 00:00"
         bannerRestaurant= R.drawable.image4
     },
     restaurants {
         nomeRestaurant="Outback - Moema"
-        endereco="Av. Lavandisca, 717 - Indianópolis, SP"
-        horaFechamento="22:00"
+        endereco="Av. Moaci, 187, 187 - Moema, São Paulo"
+        horaFechamento="Fecha às 00:00"
         bannerRestaurant= R.drawable.image5
     },
     restaurants {
         nomeRestaurant = "Sí Señor!"
-        endereco = "Av. Lavandisca, 717 - Indianópolis, SP"
-        horaFechamento = "22:00"
+        endereco = "Alameda Jauaperi, 626 - Moema"
+        horaFechamento = "Fecha as 00:00"
         bannerRestaurant = R.drawable.image3
     })
 
