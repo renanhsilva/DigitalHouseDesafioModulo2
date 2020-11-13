@@ -7,14 +7,6 @@
     tools:context=".LoginActivity"
     android:orientation="vertical">
 
-    <!-- parte de cima do app -->
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/blue"
-        app:title="Digital House Foods"
-        app:titleTextColor="@color/white" />
-
     <!-- email do usuário -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
