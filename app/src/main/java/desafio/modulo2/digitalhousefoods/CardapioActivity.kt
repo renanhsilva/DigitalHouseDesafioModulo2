@@ -8,8 +8,10 @@ import com.example.digitalhousefoods.domain.RestaurantAdapter
 import kotlinx.android.synthetic.main.activity_cardapio.*
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_register.*
+import kotlinx.android.synthetic.main.restaurant_itens.*
 
 class CardapioActivity : AppCompatActivity(), CardapioAdapter.OnClickCardapioListener {
+    val pratosList = listCardapios()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cardapio)
@@ -17,9 +19,17 @@ class CardapioActivity : AppCompatActivity(), CardapioAdapter.OnClickCardapioLis
         recycler_cardapio.layoutManager = GridLayoutManager (this, 2)
         setSupportActionBar(tb_cardapio)
 
+        img_superiorcardapio.setImageResource(intent.getIntExtra("imgRestaurante",0))
+        txt_nome_restaurant_cardapio.text = intent.getStringExtra("nomeRestaurante")
+
+
+
     }
     override fun onClickCardapio(position: Int) {
-        startActivity(Intent(this, PratosActivity::class.java))
+        val pratos = pratosList[position]
+        val intent = Intent(this, PratosActivity::class.java)
+        intent.putExtra("txtNomePrato", pratos.nomeCardapio)
+        startActivity(intent)
     }
 
     override fun onSupportNavigateUp(): Boolean {

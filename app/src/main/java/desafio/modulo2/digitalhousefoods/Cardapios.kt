@@ -16,7 +16,7 @@ fun cardapios(block: CardapiosBuild.() -> Unit): Cardapios = CardapiosBuild().ap
 
 fun listCardapios(): MutableList<Cardapios> = mutableListOf(
     cardapios {
-        nomeCardapio = "Salada com molho de Gemgibre"
+        nomeCardapio = "Salada com molho de gengibre"
         imagemCardapio = R.drawable.image4
     },
     cardapios {
@@ -32,23 +32,23 @@ fun listCardapios(): MutableList<Cardapios> = mutableListOf(
         imagemCardapio = R.drawable.image4
     },
     cardapios {
-        nomeCardapio = "Macarrão"
+        nomeCardapio = "Pizza"
         imagemCardapio = R.drawable.image4
     },
     cardapios {
-        nomeCardapio = "Macarrão"
+        nomeCardapio = "Hotdog"
         imagemCardapio = R.drawable.image4
     },
     cardapios {
-        nomeCardapio = "Macarrão"
+        nomeCardapio = "Feijoada"
         imagemCardapio = R.drawable.image4
     },
     cardapios {
-        nomeCardapio = "Macarrão"
+        nomeCardapio = "Torresmo"
         imagemCardapio = R.drawable.image4
     },
     cardapios {
-        nomeCardapio = "Macarrão"
+        nomeCardapio = "Pão de quiejo"
         imagemCardapio = R.drawable.image4
     }
 )
