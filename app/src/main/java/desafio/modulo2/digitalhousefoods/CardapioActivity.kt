@@ -29,6 +29,7 @@ class CardapioActivity : AppCompatActivity(), CardapioAdapter.OnClickCardapioLis
         val pratos = pratosList[position]
         val intent = Intent(this, PratosActivity::class.java)
         intent.putExtra("txtNomePrato", pratos.nomeCardapio)
+        intent.putExtra("imgPrato", pratos.imagemCardapio)
         startActivity(intent)
     }
 
