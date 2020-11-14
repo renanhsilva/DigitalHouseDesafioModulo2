@@ -21,6 +21,10 @@ class HomeActivity : AppCompatActivity(), RestaurantAdapter.OnClickRestaurantLis
     }
 
     override fun onClickRestaurant(position: Int) {
-        startActivity(Intent(this, CardapioActivity::class.java))
+        val restaurante = restaurantList[position]
+        val intent = Intent(this, CardapioActivity::class.java)
+        intent.putExtra("imgRestaurante", restaurante.bannerRestaurant)
+        intent.putExtra("nomeRestaurante", restaurante.nomeRestaurant)
+        startActivity(intent)
     }
 }
