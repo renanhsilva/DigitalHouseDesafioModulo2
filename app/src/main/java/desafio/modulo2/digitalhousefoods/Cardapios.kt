@@ -21,15 +21,15 @@ fun listCardapios(): MutableList<Cardapios> = mutableListOf(
     },
     cardapios {
         nomeCardapio = "Macarrão"
-        imagemCardapio = R.drawable.image4
+        imagemCardapio = R.drawable.image5
     },
     cardapios {
         nomeCardapio = "Espaguete"
-        imagemCardapio = R.drawable.image4
+        imagemCardapio = R.drawable.image3
     },
     cardapios {
         nomeCardapio = "Macarrão"
-        imagemCardapio = R.drawable.image4
+        imagemCardapio = R.drawable.image1
     },
     cardapios {
         nomeCardapio = "Pizza"
@@ -41,7 +41,7 @@ fun listCardapios(): MutableList<Cardapios> = mutableListOf(
     },
     cardapios {
         nomeCardapio = "Feijoada"
-        imagemCardapio = R.drawable.image4
+        imagemCardapio = R.drawable.image5
     },
     cardapios {
         nomeCardapio = "Torresmo"
@@ -49,6 +49,6 @@ fun listCardapios(): MutableList<Cardapios> = mutableListOf(
     },
     cardapios {
         nomeCardapio = "Pão de quiejo"
-        imagemCardapio = R.drawable.image4
+        imagemCardapio = R.drawable.image1
     }
 )
