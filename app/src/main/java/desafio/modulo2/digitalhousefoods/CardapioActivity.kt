@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.digitalhousefoods.domain.RestaurantAdapter
 import kotlinx.android.synthetic.main.activity_cardapio.*
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.activity_register.*
 
 class CardapioActivity : AppCompatActivity(), CardapioAdapter.OnClickCardapioListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,8 +15,14 @@ class CardapioActivity : AppCompatActivity(), CardapioAdapter.OnClickCardapioLis
         setContentView(R.layout.activity_cardapio)
         recycler_cardapio.adapter = CardapioAdapter(listCardapios(), this)
         recycler_cardapio.layoutManager = GridLayoutManager (this, 2)
+        setSupportActionBar(tb_cardapio)
     }
     override fun onClickCardapio(position: Int) {
         startActivity(Intent(this, PratosActivity::class.java))
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

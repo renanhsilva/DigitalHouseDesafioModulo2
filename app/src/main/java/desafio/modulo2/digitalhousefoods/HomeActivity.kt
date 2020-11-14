@@ -19,5 +19,6 @@ class HomeActivity : AppCompatActivity(), RestaurantAdapter.OnClickRestaurantLis
 
     override fun onClickRestaurant(position: Int) {
         startActivity(Intent(this, CardapioActivity::class.java))
+
     }
 }
