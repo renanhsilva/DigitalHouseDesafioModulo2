@@ -6,20 +6,25 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import kotlinx.android.synthetic.main.activity_register.*
 
 
-class LoginActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_register)
+        findViewById<Button>(R.id.btnRegister).setOnClickListener(openActivity(HomeActivity::class.java))
+        setSupportActionBar(tb_register)
 
-        findViewById<Button>(R.id.btnLogin).setOnClickListener(openActivity(HomeActivity::class.java))
-        findViewById<Button>(R.id.btnRegister).setOnClickListener(openActivity(RegisterActivity::class.java))
     }
-
     fun openActivity(activity: Class<out Activity>): View.OnClickListener? {
         return View.OnClickListener {
             startActivity(Intent(this, activity))
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
