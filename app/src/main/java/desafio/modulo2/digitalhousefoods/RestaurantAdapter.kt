@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import desafio.modulo2.digitalhousefoods.R
 import desafio.modulo2.digitalhousefoods.Restaurants
+import desafio.modulo2.digitalhousefoods.listaRestaurants
 import kotlinx.android.synthetic.main.restaurant_itens.view.*
 
 class RestaurantAdapter(val listRestaurants: MutableList<Restaurants>, val listener : OnClickRestaurantListener) : RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder>() {
@@ -20,6 +21,7 @@ class RestaurantAdapter(val listRestaurants: MutableList<Restaurants>, val liste
 
     override fun onBindViewHolder(holder: RestaurantViewHolder, position: Int) {
         holder.bind(listRestaurants[position])
+
     }
 
     interface OnClickRestaurantListener{

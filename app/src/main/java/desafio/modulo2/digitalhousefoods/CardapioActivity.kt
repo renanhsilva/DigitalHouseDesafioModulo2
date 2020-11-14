@@ -16,6 +16,7 @@ class CardapioActivity : AppCompatActivity(), CardapioAdapter.OnClickCardapioLis
         recycler_cardapio.adapter = CardapioAdapter(listCardapios(), this)
         recycler_cardapio.layoutManager = GridLayoutManager (this, 2)
         setSupportActionBar(tb_cardapio)
+
     }
     override fun onClickCardapio(position: Int) {
         startActivity(Intent(this, PratosActivity::class.java))
